@@ -1,0 +1,12 @@
+<%= error_messages_for :user %>
+
+
+<% rounded_box :blue do |b| %>
+	<% form_for :map do |f| %>
+		<p><label for="map_question"><%= "What is the question that you wants to investigate with this map?" %></label>
+		<%= f.text_field :question %></p>
+				
+		<p><%= f.submit "Create Map" %></p>
+	<% end %>
+
+<% end %>

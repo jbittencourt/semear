@@ -1,0 +1,14 @@
+== Welcome to SEMEAR
+
+SEMEAR was born from the investigation of how to create a tool that enables students to explore large libraries of digital content. It seeks for the pedagogical use of different types of media such as video, hyper-text, images and so on. This area of investigation is usually called Media Integration and its main challenge is to create links among different media languages that weren't created to work together. This fragmentation of the languages demands the existence of an integrator agent that plots the connections between the different medias. 
+
+This system aims to help in Media Integration process, bringing to the user ways to produce meaning to the search process. More than simple searching, SEMEAR engages the user in a constructive action and uses this context as meta-information to select the relevant media.
+
+To do so, the users use Conceptual Maps as a way to express the subject of their investigation, which server as context for the search engine to select the pertinent media available through content plugins. 
+
+== Installation
+
+First you need to install the following gems:
+
+% gem  install devise --version=1.0.8
+% gem install acts_as_versioned

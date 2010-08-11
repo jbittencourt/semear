@@ -1,0 +1,12 @@
+<div id="section_title_maps" class="section_title">
+	<%= image_tag "section_icon_maps.png"%> <%= "Maps" %>
+</div>
+
+<% rounded_box :blue do |b| %>
+	<%= link_to "Create New Map" , {:controller => "maps", :action => "new"}, :class => "action_map_link" %>
+
+<% end %>
+
+<% rounded_titled_box "My Maps", :orange do |b|  %>
+	List my maps
+<% end %>

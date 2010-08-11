@@ -1,0 +1,215 @@
+/* Document properties */
+
+body {
+	margin: 0;
+	font-family: Arial, "MS Trebuchet", sans-serif;
+	font-weight: bold;
+}
+
+.banner { 
+    background: url(/images/menuBackground.png);
+}
+
+.banner .end-banner {
+    background: url(/images/menuEnd.png) no-repeat right top; 
+}
+
+.banner .logo { float: left; }
+
+/* Menu styles */
+.banner ul {
+	list-style: none inside;
+    position: absolute;
+    right: 3%;
+    top: 0px;
+    float: left;
+	margin-top: 56px;
+}
+
+
+.banner ul li {
+	float: right ;
+	width: 105px;
+	height: 48px;
+	text-align: center;
+	padding-top: 1em;
+	background: url("/images/menuTabs.png");
+	background-repeat: no-repeat;
+}
+
+.banner ul li a {
+	text-decoration: none;
+	color: white;
+}
+
+#splitBar {
+	clear: both;
+}
+
+#contentContainner {
+	padding-top: 20px;
+}
+
+/* Welcome page special settings 
+   Value of the defaul orange: #f9a01b
+*/
+
+#logoContainner {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#loginBox {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+#loginContainner {
+	color: #f9a01b;
+	text-align: center;
+}
+
+#loginContainner A {
+	color: #fed8a5;
+}
+
+/* INPUT AND FORMs STYLES */
+
+INPUT {
+	border: 3px solid #f9a01b;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+
+
+INPUT[type=submit] {
+	border: 3px solid #f9a01b;
+	background-color: #f9a01b;
+	color: white;
+	font-weight: bold;
+}
+
+/*
+  SECTIONS
+ */
+
+.section_title {
+	font-size: 150%;
+	font-weight: bold;
+}
+
+#section_title_maps {
+	color: #ac5a26;
+}
+
+
+/* media searching */
+.media_result {
+	padding-left:15px;
+	padding-top:15px;
+	margin-bottom:15px;
+	/* border: 1px solid red;*/
+	height:224px;	
+	display:block;
+}
+.media_preview{
+float:left;
+}
+.media_info{
+	float:left;
+	left: 250px;
+	
+		
+}
+
+.media_title{
+	font-weight: bold;
+	
+}
+
+.media_desc{
+	font-size:small;
+}
+.media_add{
+	bottom:0px;
+}
+
+.media_tags{
+	
+}
+
+/* ACTIONS */
+
+.action_map_link {
+	text-decoration: none;
+	color: #51452b;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 34px;
+	background-image: url('/images/action_icon_new_map.png');
+	background-repeat: no-repeat;
+}
+
+
+
+/* BOXES */
+
+/* Box type: blue
+   Primary color: #fecc8b 
+   Secondary color: #fef5e6
+*/
+
+.rounded_box_orange {
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 8px;
+	background-color: #fef5e6;
+	border: thin solid #fecc8b;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+
+.rounded_box_orange_title {
+	width: 40%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 5px;
+	background-color: #fecc8b;
+	border: thin solid #fecc8b;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	color: #aa602b;
+}
+
+/* Box type: blue
+   Primary color: e9e6f1
+   Secondary color: f9f8fd
+   Font color: 7a699d
+*/
+.rounded_box_blue {
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 8px;
+	padding-top: 15px;
+	background-color: #f9f8fd;
+	border: thin solid #e9e6f1;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+}
+
+.rounded_box_blue_title {
+	width: 40%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 5px;
+	background-color: #e9e6f1;
+	border: thin solid #e9e6f1;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	color: #7a699d;
+}
+
