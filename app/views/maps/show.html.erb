@@ -1,0 +1,16 @@
+<script language="javascript">
+	 setAddSeedAction('<%= find_seed_map_path(@map) %>.js');
+</script>
+	
+<div id="newSeedDialog">
+	<form>
+		<label for="word" />Seed Name</label><input type=text id="word"/>
+		<input type=button onClick="createSeed()" value="Create Seed Word" />
+	</form>
+</div>
+	
+<canvas id="map-canvas" width="800" height="400">
+	<p>Your browser doesn't support canvas.</p>
+</canvas>
+
+
