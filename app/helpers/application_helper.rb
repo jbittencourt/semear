@@ -19,4 +19,13 @@ module ApplicationHelper
   def rounded_box(type, options = {}, &block)
     block_to_partial('shared/rounded_box', options.merge(:type => type), &block)
   end
+  
+  #implements a simple image for spinner. You need to have an image called spinnee.gif in public/images
+  # the default class of the image is spinner.
+  def spinner(options = {})
+    options.merge!({:class=> 'spinner', :style =>'display: none'})
+    image_tag('spinner.gif', options)
+  end
+  
+  
 end

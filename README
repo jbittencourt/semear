@@ -11,4 +11,4 @@ To do so, the users use Conceptual Maps as a way to express the subject of their
 First you need to install the following gems:
 
 % gem  install devise --version=1.0.8
-% gem install acts_as_versioned
+%  gem install nbudin-version_fu

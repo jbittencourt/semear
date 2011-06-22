@@ -4,11 +4,20 @@ class CreateMaps < ActiveRecord::Migration
       t.string :question, :null=>false
       t.binary :data
       t.integer :editor_id
+      t.integer :version, :default=>1
       t.timestamps
     end
     
-    create_table :concepts_maps, :id=>false do |t|
-      t.integer :concept_id, :map_id
+    create_table :map_versions do |t|
+      t.references :map, :user
+      t.integer :version
+      t.string  :question
+      t.text    :data
+      t.timestamps
+    end
+    
+    create_table :maps_users, :id=>false do |t|
+      t.references :map, :user
     end
     
   end

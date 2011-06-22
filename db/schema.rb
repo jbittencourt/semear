@@ -9,7 +9,45 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100811200740) do
+ActiveRecord::Schema.define(:version => 20100811214117) do
+
+  create_table "map_versions", :force => true do |t|
+    t.integer  "map_id"
+    t.integer  "user_id"
+    t.integer  "version"
+    t.string   "question"
+    t.text     "data"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "maps", :force => true do |t|
+    t.string   "question",                  :null => false
+    t.binary   "data"
+    t.integer  "editor_id"
+    t.integer  "version",    :default => 1
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "maps_seeds", :id => false, :force => true do |t|
+    t.integer "map_id"
+    t.integer "seed_id"
+  end
+
+  create_table "maps_users", :id => false, :force => true do |t|
+    t.integer "map_id"
+    t.integer "user_id"
+  end
+
+  create_table "seeds", :force => true do |t|
+    t.string   "word"
+    t.string   "color"
+    t.string   "image"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                               :default => "", :null => false

@@ -41,4 +41,5 @@ Rails::Initializer.run do |config|
   
   config.gem 'warden'
   config.gem 'devise'
+  config.gem "nbudin-version_fu", :lib => "version_fu", :source => "http://gemcutter.org"
 end

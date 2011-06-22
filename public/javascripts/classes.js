@@ -30,6 +30,11 @@ function clikableLabel(name, x, y) {
     
 }
 
+function Map() {
+    this.seeds = new Object();
+    this.connections = new Object();
+}
+
 function Seed(name,x,y)
 {
     /** This variable represents the state machine for the object visualization.

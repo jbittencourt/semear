@@ -4,7 +4,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.root :controller => "dashboard"
   
-  map.resource :map
+  map.resources :maps, :member => { :find_seed => :post, :save => :post }
  
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'

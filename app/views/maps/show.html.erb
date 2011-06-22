@@ -1,5 +1,11 @@
 <script language="javascript">
-	 setAddSeedAction('<%= find_seed_map_path(@map) %>.js');
+	setAddSeedAction('<%= find_seed_map_path(@map) %>.js');
+	saveMapAction = '<%= save_map_path(@map) %>.js';
+	
+	/*
+	<% if @map.data != nil %>
+		map = JSON.parse("<%= escape_javascript(@map.data) %>", parseMap);
+	<% end %> */
 </script>
 	
 <div id="newSeedDialog">
@@ -8,9 +14,19 @@
 		<input type=button onClick="createSeed()" value="Create Seed Word" />
 	</form>
 </div>
-	
+
+
+<form>
+	<input type=button onClick="saveMap()" value="Save Map" /> <%= spinner :id=>'spinner' %>
+</form>	
+
+<div id="messages"></div>
+
 <canvas id="map-canvas" width="800" height="400">
 	<p>Your browser doesn't support canvas.</p>
 </canvas>
+
+
+
 
 

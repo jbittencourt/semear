@@ -1,0 +1,9 @@
+.DS_Store
+log/*.log
+tmp/**/*
+vendor/**/*
+config/database.yml
+db/*.sqlite3
+public/system/*
+google_ad_sense
+acts-as-rated

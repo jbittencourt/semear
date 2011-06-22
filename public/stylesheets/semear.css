@@ -213,3 +213,38 @@ float:left;
 	color: #7a699d;
 }
 
+#errorbox,
+.errorbox {
+        background-color: #fcc;
+        border: 2px dashed #c00;
+        padding: 5px;
+        margin: 10px ;
+        font-size: 90%;
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+}
+
+.errorbox h2 {
+    font-size: 110%;
+}
+
+/* MAP Specific configurations */
+#map-canvas {
+    border: 1px solid black;
+	z-index: 0;
+}
+
+#newSeedDialog {
+    float: left;
+	display: none;
+	position: absolute;
+	width: 200px;
+	height: 100px;
+	
+	top: 200px;
+	left: 300px;
+	z-index: 100;
+	border: 2px solid #dededc;
+	background: #f1f1f1;
+}
